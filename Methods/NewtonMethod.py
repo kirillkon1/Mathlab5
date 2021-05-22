@@ -19,6 +19,7 @@ class NewtonMethod(AbstractMethod):
         Nn = 0
         base = 1
 
+
         for i in range(len(dots)):
             Nn += differences[i] * base
             base *= (num - x_coords[i])/(h * (i+1))

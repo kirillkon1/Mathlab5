@@ -31,6 +31,8 @@ def readUser():
             x = int(input())
             dots_list.append(Dot(x, chooseFunc(x, fun_mod)))
 
+
+
     return dots_list
 
 def readInterpolationPoint ():
@@ -52,6 +54,7 @@ def readPoint(file_name: str) -> list:
             dots_list.append(dot)
         except Exception:
             continue
+    file.close()
 
     return dots_list
 
